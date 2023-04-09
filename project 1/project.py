@@ -13,12 +13,10 @@ I love to read works of fiction in the English language. I enjoy reading leisure
 
 As he grows, he goes from bad to worse, treading recklessly and wants only on the path of sin and corruption, spoiling others too in the process, till he is saturated with the burden of his sins including that of committing murder. So as time moves inexorably, his desire for everlasting youth becomes his very retribution. The story points to how we can and should use our productive years of youth, and not waste and abuse the period of our life. For, time and tide wait for none, and time lost can never come back. I am very fascinated by the idea of Time, and this book delves into this issue through the story of a young man.
 
-——– Written by N. KALYANI
-
-['FATHER','MOTHER','SISTER','BROTHER','COUSIN','DOCTOR','NURSE','EMPLOYEE','MANAGER','TIE','AND','OR','IN','BAG','SHOE','BAG','SAND','SALARY','ENGINEER','BREAKFAST','DINNER','EAT','COFFEE','BITE','ARRANGE','APPLE','ORANGE','BALLOON','SOUND','VOICE','FROG','CAT','HELP','DANCE']"""
-print("Read the given paragraph.\n")
-print(paragraph)
-print()
+——– Written by N. KALYANI"""
+# print("Read the given paragraph.\n")
+# print(paragraph)
+# print()
 # not the best solution as i can still contain duplicate elements if it found two word ending with s or es or , as striping will happpen after checking the paragraph word is in the wordlist or not
 # wordList=[word.rstip(',').rstrip('es').rstip('s') for word in paragraph.split() if word not in "aAiI" and word!='---' and word not in wordList]  
 
@@ -32,7 +30,7 @@ print("\n\n\n\t\t\t\t G\t A\t M\t E\n\t\t\t W   O   R   D      P   U   Z   Z   L
 while True:
     score=0
     selected_word = random.sample(wordList,5)
-    
+
     for word in selected_word:
 
         print("\nArrange the word to form a valid word : ")
