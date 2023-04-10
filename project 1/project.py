@@ -46,17 +46,14 @@ while True:
         # print(len(shuffled_word))
 
         # get user input and convert it to uppercase
-        word=input("Form valid word : ").upper()
+        user=input("Form valid word : ").upper()
 
         # check if user input matches the word
-        if word:
-            if word in selected_word:
-                print("correct")
-                score += 1
-            else:
-                print("Wrong. The correct word is", selected_word[0])
+        if user in selected_word:
+            print("correct")
+            score+=1
         else:
-            print("Please enter a word.")
+            print(f"Wrong. The correct word is {word}")
 
 
     print()
