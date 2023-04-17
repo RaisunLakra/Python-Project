@@ -16,7 +16,7 @@ while True:
     for word in selected_word:
 
         print("\nArrange the word to form a valid word : ")
-
+        
         # suffle the letters of the word
         shuffled_word=''.join(random.sample(word,len(word)))
         while shuffled_word==word:
@@ -29,7 +29,7 @@ while True:
         user=input("Form valid word : ").upper()
 
         # check if user input matches the word
-        if Counter(word)==Counter(user) and user in selected_word:     # Counter constructor takes and iterable and return a dictionary like object which that maps each unique element in the iterable to its frequency count
+        if Counter(word)==Counter(user) and user in wordList:     # Counter constructor takes and iterable and return a dictionary like object which that maps each unique element in the iterable to its frequency count
             print("correct")
             score+=1
         else:
