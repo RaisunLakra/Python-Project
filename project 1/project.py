@@ -3,8 +3,9 @@
 
 import random
 from time import sleep
+from collections import Counter
 
-wordList=['FATHER','MOTHER','SISTER','BROTHER','COUSIN','DOCTOR','NURSE','EMPLOYEE','MANAGER','TIE','AND','OR','IN','BAG','SHOE','BAG','SAND','SALLARY','ENGINEER','BREAKFAST','DINNER','EAT','COFFEE','BITE','ARRANGE','APPLE','ORANGE','BALLOON','SOUND','VOICE','FROG','CAT','HELP','DANCE']
+wordList=['FATHER','MOTHER','SISTER','BROTHER','COUSIN','DOCTOR','NURSE','EMPLOYEE','MANAGER','TIE','AND','OR','IN','BAG','SHOE','BAG','SAND','SALLARY','ENGINEER','BREAKFAST','DINNER','EAT','COFFEE','BITE','ARRANGE','APPLE','ORANGE','BALLOON','SOUND','VOICE','FROG','CAT','HELP','DANCE','SILENT','LISTEN']
 
 print("\n\n\n\t\t\t\t G\t A\t M\t E\n\t\t\t W   O   R   D      P   U   Z   Z   L   E\n\n")
 
@@ -28,7 +29,7 @@ while True:
         user=input("Form valid word : ").upper()
 
         # check if user input matches the word
-        if user in selected_word:
+        if Counter(word)==Counter(user) and user in selected_word:
             print("correct")
             score+=1
         else:
